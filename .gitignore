@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+# Project specific
+CIS_Benchmarks/
+*.log
+error_screenshot.png
