@@ -117,6 +117,12 @@ def main():
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
+
+    # Check for headless mode from environment variable (default to False for local execution)
+    if os.environ.get('HEADLESS', 'false').lower() in ('true', '1', 'yes'):
+        print("Modo HEADLESS activado.")
+        options.add_argument("--headless=new")
+
     
     # Preferencias para activar descarga automática y sin visor PDF
     prefs = {

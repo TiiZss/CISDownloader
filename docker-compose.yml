@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  cisdownloader:
+    build: .
+    container_name: cis_downloader
+    volumes:
+      # Persistir las descargas en la carpeta local CIS_Benchmarks
+      - ./CIS_Benchmarks:/app/CIS_Benchmarks
+    environment:
+      # Activar modo headless para Docker
+      - HEADLESS=true
+      # Para evitar problemas con permisos de usuario en volúmenes montados (opcional, ajusta según necesidad)
+      - PYTHONUNBUFFERED=1

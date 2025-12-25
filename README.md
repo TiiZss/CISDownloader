@@ -82,6 +82,25 @@ The script will launch a Chrome window (managed by Selenium), navigate to the CI
 
 > **Note**: The script attempts to automatically accept cookies. If you see the browser stuck on the cookie banner, manual intervention might be required (though unlikely).
 
+### Method 3: Docker (Recommended for isolation)
+
+You can run the tool in a container without installing Python or Chrome locally.
+
+1.  **Run with Docker Compose:**
+    ```bash
+    docker-compose up
+    ```
+    This will build the image and start the download. Files will be saved in the `CIS_Benchmarks` folder in your current directory.
+
+2.  **Stop the container:**
+    Press `Ctrl+C` or run:
+    ```bash
+    docker-compose down
+    ```
+
+**Note:** The Docker container runs in **HEADLESS mode** automatically, so you won't see the browser window. The script output will be shown in your terminal.
+
+
 ## ☕ Support
 
 If this tool saved you time, consider buying me a coffee!
