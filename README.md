@@ -20,8 +20,8 @@ Automated tool to download the **latest version** of all CIS Benchmarks directly
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/TiiZss/CIS-Benchmark-Scraper.git
-   cd CIS-Benchmark-Scraper
+   git clone https://github.com/TiiZss/CISDownloader.git
+   cd CISDownloader
    ```
 
 2. Install dependencies:
@@ -92,7 +92,7 @@ If this tool saved you time, consider buying me a coffee!
 
 If you find this project useful, please **give it a star**! It helps others find the project and motivates me to keep improving it.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=TiiZss/CIS-Benchmark-Scraper&type=Date)](https://star-history.com/#TiiZss/CIS-Benchmark-Scraper&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=TiiZss/CISDownloader&type=Date)](https://star-history.com/#TiiZss/CISDownloader&Date)
 
 ## 📄 License
 
