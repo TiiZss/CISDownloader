@@ -34,12 +34,49 @@ Automated tool to download the **latest version** of all CIS Benchmarks directly
    - Google Chrome installed
 
 ## 🛠️ Usage
+    
+### Method 1: Automatic (Recommended)
 
-Simply run the script:
+**Windows:**
+Double-click `run.bat`.
 
+**Linux / macOS:**
+Open a terminal, make the script executable, and run it:
 ```bash
-python cisdownloader.py
+chmod +x run.sh
+./run.sh
 ```
+
+These scripts will:
+1. Create a Python virtual environment (`.venv`) if it doesn't exist.
+2. Install necessary dependencies.
+3. Run the downloader.
+
+### Method 2: Manual
+
+1. Create and activate a virtual environment:
+   
+   **Windows:**
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
+
+   **Linux / macOS:**
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the script:
+   ```bash
+   python cisdownloader.py
+   ```
 
 The script will launch a Chrome window (managed by Selenium), navigate to the CIS portal, and start downloading files to the `CIS_Benchmarks` directory.
 

@@ -12,7 +12,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # --- CONFIGURACIÓN ---
 # Enlace de acceso a la página de descargas de CIS
-URL_ACCESO = "https://learn.cisecurity.org/e/799323/l-799323-2020-07-20-28mnm/2mnqr/2612638360/h/vT9Eq0qyyuhceegtopg1OtS3XKkPOra3-DACmrif5pU"
+URL_ACCESO = "https://downloads.cisecurity.org/#/"
 CARPETA_BASE = "CIS_Benchmarks"
 
 # SELECTORES ACTUALIZADOS (VERIFICADO EN URL DIRECTA)
